@@ -1,13 +1,10 @@
-
+import { Outlet } from "react-router-dom";
+import MainLayout from "./components/layout/MainLayout/MainLayout";
 
 function App() {
-  
-
-  return (
-    <>
-  <h1>Clean Co</h1>
-    </>
-  )
+  return <MainLayout>
+    <Outlet/>
+  </MainLayout>;
 }
 
-export default App
+export default App;
