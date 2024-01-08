@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import Container from "../../components/ui/Container/Container";
 
 
 const Home = () => {
     return (
+        <Container>
         <div className="flex py-32 gap-16">
         <div className="flex-1 flex flex-col justify-between py-14 ">
           <h1 className="text-7xl font-bold text-start">
@@ -47,12 +49,13 @@ const Home = () => {
         </div>
         <div className="h-[600px] w-full bg-green-500 flex-1 rounded-3xl overflow-hidden ">
           <img
-            src=''
+            src='https://images.unsplash.com/photo-1610093641855-31ffd617a94a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
             alt="landing"
             className="w-full h-full object-cover "
           />
         </div>
       </div>
+      </Container>
     );
 };
 
